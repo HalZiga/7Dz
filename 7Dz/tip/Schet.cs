@@ -40,9 +40,6 @@ namespace _7Dz
             uint b = (uint)rnd.Next(0, 99999);//как сделать так чтобы метод в котором рандом при разных вызовах генерировал разные значения
             return b;
         }
-
-
-
         public bool Snat(float temp)
         {
             //Console.Write("Введите сумму для пополнения ");
