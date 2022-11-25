@@ -41,9 +41,10 @@ namespace _7Dz
         }
         public override bool Equals(object obj)
         {
-            if (obj is Song)
+            Song s = obj as Song;
+            if (s != null)
             {
-                if ($"{this.name} {this.author}" == Song.Title(obj as Song))
+                if ($"{this.name} {this.author}" == Song.Title(s))
                 {
                     return true;
                 }
@@ -92,7 +93,7 @@ namespace _7Dz
 
         static void Main(string[] args)
         {
-            /*Console.WriteLine("Задание 8.1");
+            Console.WriteLine("Задание 8.1");
             Schet schet1 = new Schet(777,666,Tip.Tekushiy);
             Schet schet2 = new Schet(234, 696, Tip.Sberegatelniy);
             Console.WriteLine("Какую сумму хотите перевести из первого банка во второй?");
@@ -128,7 +129,7 @@ namespace _7Dz
             string[] intFormats = { "D", "x", "X" };
             int val = 255;
             for (int i = 0; i < intFormats.Length; i++)
-                Console.WriteLine("{0} as {1}:  {2}", val, intFormats[i], val.ToString(intFormats[i], null));*/
+                Console.WriteLine("{0} as {1}:  {2}", val, intFormats[i], val.ToString(intFormats[i], null));
 
             Console.WriteLine("Задание 8.11");
             Console.WriteLine("ДЗ упражнение 8.1");
